@@ -1,0 +1,1201 @@
+*{
+    box-sizing: border-box;
+}
+.row {
+         margin-right: 0px; 
+     margin-left: 0px; 
+}
+/*Start Header Area*/
+header {
+    
+    height: 70px;
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    transition: 0.9s all ease-in;
+
+}
+.patient-info{
+    background-color: #aa2fa4;
+    height: 66px;
+}
+.small-purple{
+    background-color: #aa2fa4;
+    border-bottom-right-radius: 25px;
+    height: 66px;
+    
+    
+}
+.sign-in{
+    margin-top: 5px;
+    background-color: #fff;
+    border-top-left-radius: 25px;
+    height: 66px;
+}
+.sign-in-back{
+    background-color: #aa2fa4;
+    height:66px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+header>img {
+    position: absolute;
+    z-index: 100;
+    top: -17px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .patient-info img{
+    padding-left: 25px;
+    padding-top: 1px;
+}
+header .row .patient-info span {
+    color : #fff;
+}
+
+header .sign-in input {
+    overflow: visible;
+    color: #aa2fa4;
+    font-style: italic;
+    border: 2.5px solid #aa2fa4;
+    padding: 11px;
+    margin: 10px 0px 0px 26px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    transition: 0.2s all ease-in;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0px 0px 3px 1px #e8c0e6 inset;
+}
+
+header .sign-in button {
+    border-radius: 20px;
+    background-color: #aa2fa4;
+    color:#fff;
+    height: 45px;
+    padding: 13px;
+    margin: 10px 0px 0px 45px;
+    width: 131px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease-in;
+}
+header .sign-in button:hover{
+    background-color: #8c2587;
+}
+header .sign-in button:focus {
+    outline: none;
+}
+header .sign-in button:active{
+    border: none;
+    
+}
+
+@media (max-width: 1200px) {
+    header .sign-in input {
+        margin: 13px 0px 0px 20px;
+    }
+    header .sign-in button {
+        margin: 13px 0px 0px 20px;
+        width:100px;
+    }
+}
+
+
+
+
+/*End Header Area*/
+
+/*Start Left Navigation*/
+.sidebar{
+    position: relative;
+    
+   
+    
+}
+ .left-nav{
+    position: absolute;
+    top:0px;
+/*    left: -325px;*/
+    left: -283px;
+    background-color: #aa2fa4;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+/*    width:366px;*/
+    width:300px;
+    height: 533px;
+    z-index: 103;
+     transition: 0.3s all ease;
+}
+
+/*start cyan label with close and open button*/
+.cyan-label{
+    height: 51px;
+    background-color: #2bd9e0;
+    margin-top: 23px;
+}
+.cyan-circle{
+    position: absolute;
+    height: 80px;
+    background-color: #2bd9e0;
+    top: 4px;
+    width: 80px;
+    border-radius: 50%;
+    right: -66px;
+    cursor: pointer;
+    border: none;
+     box-shadow: 3px 0px 3px 1px #aeaeae ;
+}
+.cyan-circle:hover{
+    box-shadow: 1px 0px 1px 0px #aeaeae ;
+}
+.cyan-circle:focus{
+    outline: none;
+}
+.cyan-circle:active{
+    outline: none;
+    box-shadow: -2px 0px 3px 1px #aeaeae inset;
+    
+}
+
+.icon-plan-menu{
+   
+    width: 71%
+}
+/*End cyan label with close and open button*/
+/*start patient name area style*/
+.sidebar .left-nav .patient-name-area {
+/*    box-shadow: -1px -1px 7px 0px #888888 inset;*/
+    overflow: auto;
+    background-color: #eaeaea;
+    width: 234px;
+    margin: 18px 0px 0px 48px;
+    height: 370px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+   
+}
+.sidebar .left-nav .patient-name-area span {
+    display: block;
+    
+    
+}
+.sidebar .left-nav .patient-name-area tr{
+    height: 64px;
+}
+
+.sidebar .left-nav .patient-name-area table tr td span{
+    max-width: 184px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.img-first-row {
+    width:50px;
+    height: 64px;
+    background-image: url(../img/plan_status_now.png);
+    background-size: cover
+}
+.sidebar .left-nav .patient-name-area table tr td .choose-status{
+    
+    height: 25px;
+    background-color: #d7d7d7;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 12px;
+    display: none;
+}
+.sidebar .left-nav .patient-name-area table tr td .table-line{
+    width: 224px;
+    height: 1px;
+    background-color: #d7d7d7
+}
+.sidebar .left-nav .patient-name-area table tr td .status{
+    background-color:transparent;
+    padding: 0px;
+    line-height: 0;
+    border-width: 0px;
+    margin:7px;
+    margin-top: -7px;
+}
+.sidebar .left-nav .patient-name-area table tr td .status img{
+    padding: 4px;
+}
+.sidebar .left-nav .patient-name-area table tr td .status:focus{
+    outline: none
+}
+.sidebar .left-nav .patient-name-area table tr td .status:active{
+    outline: 1px solid #7d7d7d;
+    
+   
+}
+/*End patient name area style*/
+
+/*End Left Navigation*/
+
+/*start teeth area*/
+.teeth-area{
+    
+/*    height: 500px;*/
+}
+.inner-teeth-area{
+    width:100%;
+    position: relative;
+    display: block;
+    /*fade in animation*/
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+}
+
+
+.teeth-table-right tr td {
+    text-align: center;
+}
+.teeth-table-left tr td {
+    text-align: center;
+}
+
+.upper-tables  {
+    display: flex;
+    justify-content: center;
+    
+}
+.teeth-table-right, .teeth-table-left{
+    position: relative;
+}
+.upper-tables img {
+    margin-bottom: 8px;
+}
+.upper-tables img:hover {
+    box-shadow: 0px 0px 3px 1px #e8c0e6 inset;
+    cursor: pointer;
+}
+.teeth-table-left {
+/*    margin: 0px 50px;*/
+}
+
+/*start devided circle*/
+.teeth-table-right .circle-icon{
+  max-width: 100%;
+  height: auto;
+}
+.teeth-table-left .circle-icon{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.upper-circle-area, .bottom-circle-area{
+    display: flex;
+     justify-content: center;
+}
+.all-circle-buttons img {
+    margin: 2px
+}
+@media (max-width: 1366px) {
+ .all-circle-buttons img {
+    margin: 1px
+    }
+}
+
+.all-circle-buttons{
+    position: relative;
+    transform: rotate(45deg);
+}
+.center-circle{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+}
+  .center-circle img{
+        width:19px;
+        height: 17px;
+}
+@media (min-width: 1361px) and (max-width: 1560px) {
+    .center-circle img{
+        width:17px;
+        height: 15px;
+}
+    .center-circle {
+        left: 2px;
+        top: 30%;  
+    }
+}
+@media (min-width: 1280px) and (max-width: 1360px) {
+    .center-circle img{
+        width:16px;
+        height: 14px;
+}
+    .center-circle {
+        left: 2px;
+        top: 26%;  
+    }
+}
+
+
+@media (min-width: 1101px) and (max-width: 1279px)  {
+    .center-circle img{
+        width:15px;
+        height: 13px;
+}
+    .center-circle {
+        left: 1px;
+        top: 24%;  
+    }
+}
+@media (min-width: 992px) and (max-width: 1100px)  {
+    .center-circle img{
+        width:14px;
+        height: 12px;
+}
+    .center-circle {
+        left: 1px;
+        top: 20%;  
+    }
+}
+@media (max-width: 991px) {
+    .center-circle img{
+        width:13px;
+        height: 11px;
+}
+    .center-circle {
+        left: 1px;
+        top: 16%;  
+    }
+}
+/*end devided circle*/
+/*start teeth number*/
+
+table .teeth-number div{
+    margin: 3px auto;
+    width:70%;
+    background-color: #d5cad5;
+    border-radius: 5px;
+/*    margin-top: 3px;*/
+    font-weight: 600;
+    font-size: 18px;
+}
+table .teeth-number-cyan div{
+    margin: 3px auto;
+    width:70%;
+    background-color: #bdd9da;
+    border-radius: 5px;
+/*    margin-top: 3px;*/
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.center-line-vertical{
+    width:2px;
+    margin: 0px 40px;
+    background-color: #2bd9e0;
+}
+/*end teeth number*/
+
+/*start bottom teeth*/
+/*
+.bottom-tables::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top :304px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/merge-bottom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+@media (min-width: 1200px) and (max-width: 1600px){
+    .bottom-tables::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top :312px;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/merge-bottom.png);
+        background-size: contain;
+   
+}
+}
+@media (max-width: 1199px) {
+    .bottom-tables::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top :250px;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/merge-bottom.png);
+        background-size: contain;
+   
+}
+}
+*/
+.bottom-right-img-bg{
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,b1d6d7+43,b0d5d6+44,b0d5d6+44,d7bdd6+45,d7bdd6+45,d7bdd6+47,ffffff+100&1+0,1+43,0.88+45,1+45,0.88+46,0.88+46,0.88+48,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(177,214,215,1) 43%, rgba(176,213,214,1) 44%, rgba(215,189,214,1) 45%, rgba(215,189,214,0.88) 46%, rgba(215,189,214,0.88) 47%, rgba(216,190,215,0.88) 48%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(177,214,215,1) 43%,rgba(176,213,214,1) 44%,rgba(215,189,214,1) 45%,rgba(215,189,214,0.88) 46%,rgba(215,189,214,0.88) 47%,rgba(216,190,215,0.88) 48%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(177,214,215,1) 43%,rgba(176,213,214,1) 44%,rgba(215,189,214,1) 45%,rgba(215,189,214,0.88) 46%,rgba(215,189,214,0.88) 47%,rgba(216,190,215,0.88) 48%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    }
+
+
+.bottom-tables  {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bottom-tables img {
+    margin-top: 8px;
+}
+.bottom-tables img:hover {
+    box-shadow: 0px 0px 3px 1px #e8c0e6 inset;
+    cursor: pointer;
+}
+
+.bottom-tables .all-circle-buttons img {
+    margin: 2px
+}
+
+@media (max-width: 1200px){
+   .bottom-tables .all-circle-buttons img {
+    margin: 1px
+} 
+}
+
+/*end bottom teeth*/
+
+/*start div between upper lower*/
+.horz-line-between-upper-lower{
+    height: 2px;
+    margin: 13px 0px;
+    background-color: #aa2fa4;
+   
+}
+/*end div between upper lower*/
+/*try unvisible teeth*/
+.unvisible-teeth{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,adc9d1+56,b0d5d6+56,d7bdd6+58,ffffff+100&1+0,0.88+55,0.88+58,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(177,214,215,0.88) 55%, rgba(176,213,214,0.88) 56%, rgba(215,189,214,0.88) 58%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(177,214,215,0.88) 55%,rgba(176,213,214,0.88) 56%,rgba(215,189,214,0.88) 58%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(177,214,215,0.88) 55%,rgba(176,213,214,0.88) 56%,rgba(215,189,214,0.88) 58%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+.unvisible-teeth-img{
+
+}
+.top-right-img-bg{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d7bdd6+54,d7bdd6+56,b1d6d7+57,ffffff+100&1+0,0.88+52,1+55,1+57,0.88+60,1+100 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(216,191,216,0.88) 52%, rgba(215,189,214,0.96) 54%, rgba(215,189,214,1) 55%, rgba(215,189,214,1) 56%, rgba(177,214,215,1) 57%, rgba(182,217,218,0.88) 60%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(216,191,216,0.88) 52%,rgba(215,189,214,0.96) 54%,rgba(215,189,214,1) 55%,rgba(215,189,214,1) 56%,rgba(177,214,215,1) 57%,rgba(182,217,218,0.88) 60%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(216,191,216,0.88) 52%,rgba(215,189,214,0.96) 54%,rgba(215,189,214,1) 55%,rgba(215,189,214,1) 56%,rgba(177,214,215,1) 57%,rgba(182,217,218,0.88) 60%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    }
+/*try unvisible teeth*/
+
+/*start text upper, lower, left, right*/
+
+.upper-text {
+    text-transform: uppercase;
+   
+    font-weight: 600;
+    font-size: 18px;
+    color: #2bd9e0;
+}
+.right-text {
+    text-transform: uppercase;
+   
+    font-weight: 600;
+    font-size: 18px;
+    color: #aa2fa4;
+}
+.horz-seperate-section{
+    margin: 14px 0px;
+}
+
+/*end text upper, lower, left, right*/
+
+/*start right option-panel*/
+
+.right-sidebar{
+    height: 500px;
+     position: relative;
+    direction: rtl;
+    padding-right: 0px;
+    
+    
+    
+}
+.option-sidebar{
+    width: 105px;
+    background-color: #2bd9e0;
+    height: 533px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    right: 0px;
+    padding-top: 1px;
+    transition: 0.2s all ease-in;
+        
+}
+
+.rightside-icon{
+    height: 35px;
+    background-color: #eaeaea;
+    width: 70px;
+    margin-top: 45px;
+
+    
+    
+}
+.rightside-icon-btn{
+    width: 75px;
+    height: 75px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-right: 10px;
+    border: none;
+    transition: 0.2s all ease-in;
+}
+
+.rightside-icon-btn:hover{
+    box-shadow: -3px 0px 4px 0px #aeaeae ;
+}
+.rightside-icon-btn:focus{
+    outline: none;
+}
+.rightside-icon-btn:active{
+    outline: none;
+    box-shadow: 2px 0px 2px 0px #aeaeae inset
+    
+}
+.rightside-icon-img{
+    width:80%
+}
+@media (max-width: 1366px){
+.rightside-icon-btn {
+    width: 70px;
+    height: 70px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    margin-top: -15px;
+   /* margin-right: -3px;*/
+    border: none;
+}
+    .option-sidebar {
+    width: 93px;
+    height: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+    .rightside-icon{
+        width: 50px;
+        margin-top: 34px;
+        height: 46px;
+    }
+}
+/*end right option-panel*/
+/*start history area*/
+.box.box-default {
+    border-top: 0px;
+    margin-top: 2%;
+    border: 1px solid #eadcea;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px 5px;
+    box-shadow: 2px 0px 11px 0px #aeaeae;
+
+}
+.box.box-default:hover{
+    box-shadow: -2px 0px 11px 0px #aeaeae 
+
+}
+.box-header {
+    color: #aa2fa4;
+    display: block;
+    padding: 10px;
+    position: relative;
+    background-color: #ebebeb;
+    width: 175px;
+    margin-left: 22px;
+
+
+}
+.collapsed-box .box-header.with-border{
+    text-align: center;
+}
+/*
+.box-header>.box-tools {
+    position: absolute;
+    left: 26px;
+    top: 8px;
+}
+*/
+/*
+.btn-box-tool {
+    padding: 2px;
+    font-size: 12px;
+    background: transparent;
+    color: #aa2fa4;
+    border: 2px solid #aa2fa4;
+    border-radius: 50%;
+}
+.btn-box-tool:hover {
+    background: #fff;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+    color: #b78cb5
+}
+*/
+.box-header>.fa, .box-header>.glyphicon, .box-header>.ion, .box-header .box-title {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+}
+/*
+.btn.focus, .btn:focus, .btn:hover{
+    color: #aa2fa4
+}
+*/
+
+.box-header.with-border {
+    border-bottom: 1px solid #f4f4f4;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.history-body {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+    background-color: #ebebeb;
+    max-height: 270px;
+    overflow: auto;
+}
+/*end history area*/
+
+/*start switch adult and child area*/
+.kids-img-icon{
+    display: block;
+}
+.adults-img-icon{
+    display: none
+}
+.inner-teeth-area-kids{
+    width:100%;
+    position: relative;
+    display: none;
+    /*fade in animation*/
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+/*
+     -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+*/
+}
+
+/*animation keyframe*/
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.kids-img-icon, .adults-img-icon{
+    width: 90%
+}
+/*end switch adult and child area*/
+/*start aside style*/
+.main-sidebar{
+    top: 90px;
+    background-color: #2bd9e0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.sidebar-toggle {
+    float: left;
+    background-color: transparent;
+    /* background-image: none; */
+    padding: 21px 15px;
+    font-family: fontAwesome;
+    background-color: #aa2fa4;
+    color: #fff;
+}
+.sidebar-toggle:before {
+    content: "\f0c9";
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid #e0bcde;
+    border-radius: 25%;
+}
+.sidebar-toggle:before:hover {
+    content: "\f0c9";
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    border-radius: none;
+    
+}
+
+
+a:hover, a:active, a:focus {
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+}
+.main-sidebar a {
+    color: #383333;
+/*    color: #fff;*/
+    font-weight: bold;
+
+}
+.main-sidebar a:hover {
+    color: #865d84;
+}
+.main-sidebar .user-panel{
+    background-color: #aa2fa4;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    z-index: 2;
+    margin-left: -1px;
+    background-color: #2bd9e0;
+    border: 1px solid #00969c;
+}
+.input-group .form-control:first-child{
+        border: 1px solid #00969c;
+
+}
+.pull-left p, .pull-left a{
+    color: #fff;
+}
+ .pull-left a:hover{
+    color: #ddd;
+}
+.sidebar-menu>li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+}
+
+/*end aside style*/
+
+/*start ortho style*/
+.ortho{
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:0.3s;
+    -moz-animation-duration:0.3s;
+    animation-duration:0.3s;
+    width: 100%;
+    height: 400px;
+    background-color: #ddd;
+    display: none;
+}
+/*end ortho style*/
+
+/*start reservation page style*/
+.back-date-row {
+        background-color: #eaf7f7;
+        padding: 2px 0;
+        margin-top: 33px;
+    }
+.date-input {
+    font-size: 15pt;
+    width: 170px;
+    border: 1px solid #2bd9e0;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    height: 35px;
+    padding: 3px;
+    }
+.date-input:focus {
+            outline: none;
+    -moz-box-shadow: 0px 0px 3px 1px #d5e4e4 inset;
+    -webkit-box-shadow: 0px 0px 3px 1px #d5e4e4 inset;
+    -ms-box-shadow: 0px 0px 3px 1px #d5e4e4 inset;
+    box-shadow: 0px 0px 3px 1px #d5e4e4 inset;
+    }
+.appoint-table-area {
+        
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+	color: #222;
+    margin-top: -55px
+        /*padding-left: 0;
+        padding-right: 0;*/
+}
+    .line-time {
+         height: 9px;
+         background-color: #007d91;
+/*         width: 100%;*/
+         margin-top: 60px;
+    }
+    .reservation-table {
+       width: 100%;
+	   margin-bottom: 0.5em;
+	   font-size: 1em;
+	   border-collapse: collapse;
+	   border-spacing: 0;
+       overflow:scroll;
+        font-size: 1em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    .session-time {
+        
+/*         width:50px;*/
+        height: 63px;
+        
+    font-weight: bold;
+    padding: 0.35em;
+    font-size: 0.9em;
+    color: white;
+/*    border: 1px solid #ccc;*/
+    background-image: url(../img/time-label.png);
+    -ms-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    background-position:1px;
+    font-size: 0.9vw;
+}
+    .reservation-table tr td:first-child {
+        background-color: #aa2fa4;
+/*        width: 10%;*/
+        padding: 16px;
+        color: #fff;
+        -webkit-border-bottom-left-radius: 17px;
+        -moz-border-bottom-left-radius: 17px;
+        -ms-border-bottom-left-radius: 17px;;
+        border-bottom-left-radius: 17px;
+        -webkit-border-top-right-radius: 17px;
+        -moz-border-top-right-radius: 17px;
+        -ms-border-top-right-radius: 17px;
+        border-top-right-radius: 17px;
+        border-right: 3px solid #fff;
+        
+    }
+    .reservation-table tr {
+       border-bottom: 1px solid #fff;
+        -moz-box-sizing: border-box;
+	   box-sizing: border-box;
+	   margin: 0;
+	   padding: 0;
+/*	   border: 0;*/
+	   font-size: 100%;
+	   font: inherit;
+	   vertical-align: baseline;
+	   text-align: left;
+	   color: #333;
+    }
+    .reservation-table tr td {
+        text-align: center;
+        padding: 0.35em;
+        font-size: 0.9em;
+/*        border: 1px solid #ccc;*/
+        display: table-cell
+    }
+    .reservation-table img {
+        margin:0 auto
+    }
+    .disable-appointment {
+   
+        background-color: #d4e6e5;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -ms-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+        cursor: not-allowed;
+        max-width: 50px;
+    }
+    .active-appointment {
+        background-color: #92ddde;
+         border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -ms-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -webkit-border-radius: 9px;
+        border-radius: 9px;
+        -moz-box-shadow:  0px -1px 1px 1px rgba(162, 162, 162, 0.3) inset;
+        -webkit-box-shadow:  0px -1px 1px 1px rgba(162, 162, 162, 0.3) inset;
+        -ms-box-shadow:  0px -1px 1px 1px rgba(162, 162, 162, 0.3) inset;
+         box-shadow: 0px -1px 1px 1px rgba(162, 162, 162, 0.3) inset;
+        cursor: pointer;
+        max-width: 50px;
+
+
+    }
+    .active-appointment:active {
+        -moz-box-shadow: 2px 2px 1px 1px rgba(162, 162, 162, 0.4) inset;
+        -webkit-box-shadow: 2px 2px 1px 1px rgba(162, 162, 162, 0.4) inset;
+        -ms-box-shadow: 2px 2px 1px 1px rgba(162, 162, 162, 0.4) inset;
+        box-shadow: 2px 2px 1px 1px rgba(162, 162, 162, 0.4) inset;
+    }
+    .appoint-patient-name {
+        color: #4e595a;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 13px
+    }
+    .appoint-patient-phone {
+        background-color: #6ad0d2;
+        color: #4e5976;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+    }
+   @media (min-width: 1561px) {
+ 
+  .session-time {
+     background-position:13px;
+/*      padding-right: 9px*/
+    }
+}
+   @media (max-width: 1750px) {
+ 
+  .session-time {
+     background-position:8px;
+/*      padding-right: 9px*/
+    }
+}
+@media (min-width: 1361px) and (max-width: 1560px) {
+ .appoint-table-area {
+/*        margin-top: -36px;*/
+    }
+  .session-time {
+      height: 63px;
+      background-position: 0;
+      font-size: 1vw;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1360px) {
+ .appoint-table-area {
+        margin-top: -35px;
+    }
+  .session-time {
+      height: 57px;
+      background-position: 0;
+      font-size: 1vw;
+    }
+}
+
+
+@media (min-width: 1101px) and (max-width: 1279px)  {
+  .appoint-table-area {
+        margin-top: -29px;
+    }
+   .session-time {
+       height: 51px;
+       background-position: 0;
+       font-size: 1.1vw;
+    }
+}
+@media (min-width: 992px) and (max-width: 1100px)  {
+ .appoint-table-area {
+        margin-top: -28px;
+    }
+    .session-time {
+        height: 45px;
+        background-position: 0;
+        font-size: 1.1vw;
+    }
+}
+@media (max-width: 991px) {
+ .appoint-table-area {
+        margin-top: -29px;
+    }
+  .session-time {
+      height: 40px;
+      background-position: 0;
+      font-size: 1.1vw;
+    }
+}
+/*end reservation*/
+
+/*start try table*/
+
+.rg-container {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+	color: #222;
+}
+/* table */
+.appoint-table-area{
+    overflow: auto;
+}
+table.rg-table {
+	width: 100%;
+	margin-bottom: 0.5em;
+	font-size: 1em;
+	border-collapse: collapse;
+	border-spacing: 0;
+  overflow:scroll;
+}
+table.rg-table tr {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-align: left;
+	color: #333;
+}
+
+.reservation-table th{
+    min-width: 110px;
+}
+table.rg-table tr {
+	border-bottom: 1px solid #ddd;
+	color: #222;
+}
+table.rg-table tr.highlight {
+	background-color: #dcf1f0 !important;
+}
+table.rg-table.zebra tr:nth-child(even) {
+	background-color: #f6f6f6;
+}
+table.rg-table th {
+	font-weight: bold;
+	padding-top: 15px;
+	font-size: 0.9em;
+  color:white;
+  
+}
+/*
+table.rg-table td {
+	padding: 0.35em;
+	font-size: 0.9em;
+  
+}
+*/
+table.rg-table .highlight td {
+	font-weight: bold;
+}
+table.rg-table th.number, td.number {
+	text-align: center;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+.rg-container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+table.rg-table {
+	width: 100%;
+}
+
+table.rg-table thead {
+	display: none;
+}
+table.rg-table tbody {
+	width: 100%;
+  
+}
+table.rg-table tr, table.rg-table th, table.rg-table td {
+	display: block;
+	padding: 0;
+}
+table.rg-table tr {
+	border-bottom: none;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+}
+table.rg-table tr.highlight {
+	background-color: inherit !important;
+}
+table.rg-table.zebra tr:nth-child(even) {
+	background-color: none;
+}
+table.rg-table.zebra td:nth-child(even) {
+	background-color: #f6f6f6;
+}
+table.rg-table tr:nth-child(even) {
+	background-color: none;
+}
+table.rg-table td {
+	padding: 0.5em 0 0.25em 0;
+	border-bottom: 1px dotted #ccc;
+	text-align: right;
+}
+table.rg-table td[data-title]:before {
+	content: attr(data-title);
+	font-weight: bold;
+	display: inline-block;
+	content: attr(data-title);
+	float: left;
+	margin-right: 0.5em;
+	font-size: 0.95em;
+}
+table.rg-table td:last-child {
+	padding-right: 0;
+	border-bottom: 2px solid #ccc;
+}
+table.rg-table td:empty {
+	display: none;
+}
+table.rg-table .highlight td {
+	background-color: inherit;
+	font-weight: normal;
+}
+}
+
+
+/*end try table*/
